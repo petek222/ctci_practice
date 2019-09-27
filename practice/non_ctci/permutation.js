@@ -13,7 +13,7 @@ function permut(string) {
         } 
 
         else {
-            var remainingString = string.slice(0,i) + string.slice(i+1,string.length); //Note: you can concat Strings via '+' in JS
+            var remainingString = string.slice(0,i) + string.slice(i+1,string.length); 
             let subPermutations = permut(remainingString);
     
             for (let i = 0; i < subPermutations.length; i++) {
