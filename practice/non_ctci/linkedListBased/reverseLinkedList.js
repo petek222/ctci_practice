@@ -17,6 +17,8 @@ var reverseLinkedList = function(linkedlist) {
     }
     return previous;   // Change the list head !!!
   }
+
+  // Driver code
   linkedlist = reverseLinkedList(linkedlist);
 
 

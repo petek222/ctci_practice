@@ -1,3 +1,6 @@
+//
+// Print all permutations of a given string
+//
 function permut(string) {
     if (string.length < 2) return string; // This is our break condition
 

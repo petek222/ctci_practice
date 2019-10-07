@@ -15,7 +15,7 @@ var copyRandomList = (head) => {
     // If the list is empty, simply return null
     if(!head) {
         return null;
-      }
+    }
 
     // If there is a list, create a Map
     // This map stores key-value pairs for the new linked list
@@ -33,12 +33,10 @@ var copyRandomList = (head) => {
     // While there is a node in our original list (ie. not null), enter the loop
     while(n) {
 
-        // In the loop
-
         // Set the current node's 'next' field to the next node, or null if there is no 'next' field (ie. end of the list)
         clones.get(n).next = clones.get(n.next) || null;
 
-        // Set the current node's 'random' field to...
+        // Set the current node's 'random' field to the 'random' field of the current map node, or null if there is no 'random' field (ie. end of list)
         clones.get(n).random = clones.get(n.random) || null;
         n = n.next
       }
